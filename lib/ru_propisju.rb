@@ -492,9 +492,7 @@ module RuPropisju
       else
         if fraction_as_number
           kop = remainder.to_i
-          unless kop.zero?
-            parts << kop << choose_plural(kop, fractions)
-          end
+          parts << kop << choose_plural(kop, fractions)
         else
           parts << propisju_int(remainder.to_i, money_gender, fractions, locale)
         end
